@@ -1,5 +1,5 @@
-# FastReact: REACT + FASTAPI Monorepo
-This project is a mono-repo template for boostraping a react frontend app and a python fastapi backend app all orchestrated using yarn workspace
+# DataFest Full Stack LLM App Workshop
+This project is a mono-repo template for boostraping a react frontend app and a python fastapi backend for building a full stack LLM app.
 
 # Requirements
 - Python 3.7 +
