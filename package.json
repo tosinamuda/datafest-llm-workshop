@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "A react fastapi monorepo",
+  "main": "index.js",
+  "repository": "git@github.com:tosinamuda/react-fastapi-monorepo.git",
+  "author": "Tosin Amuda <tosinamuda@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  },
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"yarn start:frontend\" \"yarn start:backend\"",
+    "start:frontend": "yarn workspace @app/frontend start",
+    "start:backend": "yarn workspace @app/backend start",
+    "dev": "concurrently --kill-others-on-fail \"yarn dev:frontend\" \"yarn dev:backend\"",
+    "dev:frontend": "yarn workspace @app/frontend dev",
+    "dev:backend": "yarn workspace @app/backend dev",
+    "build:frontend": "yarn workspace @app/frontend build",
+    "test:frontend": "yarn workspace @app/frontend test"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+}
