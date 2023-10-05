@@ -3,6 +3,7 @@ This project is a mono-repo template for boostraping a react frontend app and a 
 
 # Requirements
 <ul>
+  <li>CLI Terminal</li>
   <li>Setup <code>Python 3.8+ & Pip 3</code>: I recommend using Pyenv to install python and pip:
     <ul>
       <li>Windows Installation Guide: https://github.com/pyenv-win/pyenv-win</li>
@@ -16,19 +17,17 @@ This project is a mono-repo template for boostraping a react frontend app and a 
   <li>Working Internet to connect to internet to be able to access OpenAI API</li>
 </ul>
 
-## Local Development Setup
+## Development Setup
 - React Frontend Dependencies are managed through yarn (not NPM) as we rely on yarn workspace for managing the entire monorepo
 - Python Backend Dependencies is managed through pipenv
 - Entire Monorepo is managed through yarn workspace
 
-### Frontend Setup
-1. Change your directory to frontend by running ```cd frontend```
-2. Run ```yarn``` to install all the dependencies
-
-
-### Backend Setup
-1. Change your directory to backend by running ```cd backend```
-2. Run ```yarn preinstall``` to install all the dependencies
+### Step by Step Instruction
+1. clone this repo by running ```git clone https://github.com/tosinamuda/datafest-llm-workshop.git```
+2. Change your directory to datafest-llm-workshop by running: ```cd datafest-llm-workshop```
+3. Run ```yarn``` to install all the dependencies
+4. Run ```yarn dev`` to start a development environment
+5. Run ```yarn start`` to start a production-ready environment
 
 
 ### Monorepo root
