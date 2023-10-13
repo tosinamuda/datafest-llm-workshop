@@ -1,7 +1,13 @@
-import Hero from "@/components/Hero";
+import Header from "@/components/Header";
+import Job from "@/components/Job";
 
 function App() {
-  return <Hero />;
+  return (
+    <>
+      <Header />
+      <Job />
+    </>
+  );
 }
 
 export default App;
