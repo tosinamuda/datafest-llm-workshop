@@ -29,9 +29,3 @@ This project is a mono-repo template for boostraping a react frontend app and a 
 4. Run ```yarn dev`` to start a development environment
 5. Run ```yarn start`` to start a production-ready environment
 
-
-### Monorepo root
-1. Ensure you are in the root folder
-2. Run ```yarn``` to install dependencies in the root folder to allow the scripts in the workspace run.
-3. You can run ```yarn dev``` to start both the frontend and the backend
-
