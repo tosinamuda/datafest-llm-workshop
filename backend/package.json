@@ -1,14 +1,15 @@
 {
-  "name": "@app/backend",
-  "version": "0.0.1",
-  "description": "Fast API Backend",
-  "main": "index.js",
   "author": "Tosin Amuda <tosinamuda@gmail.com>",
+  "description": "Fast API Backend",
   "license": "MIT",
+  "main": "index.js",
+  "name": "@app/backend",
   "private": true,
   "scripts": {
+    "dev": "pipenv run dev",
     "preinstall": "pip install --user pipenv; mkdir .venv; pipenv install",
-    "start" : "pipenv run start",
-    "dev" : "pipenv run dev"
-  }
+    "prompt": "pipenv run prompt",
+    "start": "pipenv run start"
+  },
+  "version": "0.0.1"
 }

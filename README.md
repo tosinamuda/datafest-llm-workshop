@@ -28,4 +28,5 @@ This project is a mono-repo template for boostraping a react frontend app and a 
 3. Run ```yarn``` to install all the dependencies
 4. Run ```yarn dev`` to start a development environment
 5. Run ```yarn start`` to start a production-ready environment
-
+6. Copy the ```.env.sample``` to ```.env``` and replace the ```OPENAI_API_KEY``` in .env with your own API Key
+7. Run ```yarn prompt``` to see a prompting for career advisor in action

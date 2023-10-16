@@ -18,7 +18,8 @@
     "dev:frontend": "yarn workspace @app/frontend dev",
     "dev:backend": "yarn workspace @app/backend dev",
     "build:frontend": "yarn workspace @app/frontend build",
-    "test:frontend": "yarn workspace @app/frontend test"
+    "test:frontend": "yarn workspace @app/frontend test",
+    "prompt": "yarn workspace @app/backend prompt"
   },
   "workspaces": [
     "frontend",
