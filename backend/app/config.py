@@ -1,5 +1,4 @@
 import os
-import re
 
 from dotenv import load_dotenv
 
@@ -27,10 +26,8 @@ class Config:
 
     @property
     def cloudflare_api_base_url(self) -> str:
-        return os.getenv(
-            "CF_API_BASE_URL",
-            "https://api.cloudflare.com/client/v4/accounts/f868290b46a61872545e64f71de18d51/ai/run/",
-        )
+        account_id = os.getenv("CF_ACCOUNT_ID", "")
+        return f"https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run/"
 
     @property
     def cors_allowed_origin_regex(self) -> str | None:
