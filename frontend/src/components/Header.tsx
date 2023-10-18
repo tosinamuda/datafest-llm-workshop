@@ -12,7 +12,7 @@ const Header = () => {
               href="#"
               aria-label="Brand"
             >
-              wintern
+              karia.ai
             </a>
             <div className="md:hidden">
               <button
@@ -30,7 +30,7 @@ const Header = () => {
                   viewBox="0 0 16 16"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
                   ></path>
                 </svg>
@@ -53,7 +53,7 @@ const Header = () => {
           >
             <div className="overflow-hidden overflow-y-auto max-h-[75vh] scrollbar-y">
               <div className="flex flex-col gap-x-0 mt-5 divide-y divide-dashed divide-gray-200 md:flex-row md:items-center md:justify-end md:gap-x-7 md:mt-0 md:pl-7 md:divide-y-0 md:divide-solid dark:divide-gray-700">
-                <a
+                {/*                 <a
                   className="font-medium text-blue-600 py-3 md:py-6 dark:text-blue-500"
                   href="#"
                   aria-current="page"
@@ -65,10 +65,10 @@ const Header = () => {
                   href="#"
                 >
                   Company
-                </a>
+                </a> */}
                 <a
                   className="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500"
-                  href="#"
+                  href="https://www.linkedin.com/groups/4911773/"
                 >
                   Community
                 </a>
@@ -77,7 +77,7 @@ const Header = () => {
                     className="inline-flex justify-center items-center gap-x-2 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-2.5 px-3 dark:focus:ring-offset-gray-800"
                     href="#"
                   >
-                    Get Started
+                    Explore Careers
                   </a>
                 </div>
               </div>

@@ -1,11 +1,11 @@
+import CareerAdvisorView from "@/components/career-advisor/CareerAdvisor";
 import Header from "@/components/Header";
-import Job from "@/components/Job";
 
 function App() {
   return (
     <>
       <Header />
-      <Job />
+      <CareerAdvisorView />
     </>
   );
 }
