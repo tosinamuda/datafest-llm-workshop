@@ -19,8 +19,8 @@ app = FastAPI(
 )
 
 config = Config()
-
-app.add_middleware(HTTPSRedirectMiddleware)
+if config.is_production:
+    app.add_middleware(HTTPSRedirectMiddleware)
 
 if config.cors_allowed_origin_regex is not None:
     app.add_middleware(
