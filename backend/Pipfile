@@ -5,9 +5,10 @@ name = "pypi"
 
 [packages]
 fastapi = "*"
-uvicorn = {extras = ["standard"], version = "*"}
 pydantic = "*"
 openai = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+
 
 [dev-packages]
 black = "*"

@@ -24,7 +24,7 @@ const CareerAdvisorOutput = ({
       {industries?.map((industry) => (
         <button
           key={industry}
-          className="rounded-full bg-blue-500/10 text-blue-500 font-semibold py-1 px-2 mx-3 my-2 md:my-0 text-sm"
+          className="rounded-full bg-blue-500/10 hover:bg-blue-500/30 text-blue-500 font-semibold py-1 px-2 mx-3 my-2 md:my-0 text-sm"
         >
           {industry}
         </button>

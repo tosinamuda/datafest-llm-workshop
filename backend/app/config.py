@@ -40,3 +40,7 @@ class Config:
     @property
     def is_development(self) -> bool:
         return os.getenv("APP_ENV") == "development"
+
+    @property
+    def port(self) -> int:
+        return int(os.getenv("PORT", "8000"))
