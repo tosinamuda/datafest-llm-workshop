@@ -7,7 +7,7 @@ export type CareerAdvisor = {
 
 
 export const validationSchema = z.object({
-  course_of_study: z.string().min(2, { message: "Enter Valid Course of Study" }),
+  course_of_study: z.string().min(2, { message: "Type at least 2 Characters" }),
   career_interest: z.string().optional(),
   limit: z.coerce.number().positive().optional().default(3)
 })

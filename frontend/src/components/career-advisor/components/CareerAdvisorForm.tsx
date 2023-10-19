@@ -31,7 +31,6 @@ const CareerAdvisorForm = ({
             >
               Course of Study<small>*</small>
               {"  "}
-              <ErrorMessage errors={errors} name="course_of_study" />
             </label>
             <input
               className="py-3 px-4 block w-full xl:min-w-[18rem] border-gray-200 shadow-sm rounded-md focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
@@ -39,6 +38,9 @@ const CareerAdvisorForm = ({
               defaultValue="Accounting"
               {...register("course_of_study")}
             />
+            <p className="text-sm font-body mt-1 font-extralight text-red-500/90">
+              <ErrorMessage errors={errors} name="course_of_study" />
+            </p>
           </div>
           <div className="mb-8">
             <label
