@@ -22,7 +22,7 @@ config = Config()
 
 app.add_middleware(HTTPSRedirectMiddleware)
 
-if not config.is_production and config.cors_allowed_origin_regex is not None:
+if config.cors_allowed_origin_regex is not None:
     app.add_middleware(
         CORSMiddleware,
         allow_origin_regex=config.cors_allowed_origin_regex,
