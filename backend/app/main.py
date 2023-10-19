@@ -5,6 +5,7 @@ from app.controllers import industry as industry_controller
 from app.models import CareerAdvisor, Response
 from fastapi import APIRouter, Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.httpsredirect import HTTPSRedirectMiddleware
 
 app = FastAPI(
     title="Career Advisor APIs",
@@ -18,6 +19,8 @@ app = FastAPI(
 )
 
 config = Config()
+
+app.add_middleware(HTTPSRedirectMiddleware)
 
 if not config.is_production and config.cors_allowed_origin_regex is not None:
     app.add_middleware(
